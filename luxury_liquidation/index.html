@@ -433,7 +433,7 @@
                                 accurate offer</span></label>
                         <input type="file" id="photos" name="photos" accept="image/*" multiple
                             class="form-input w-full px-4 py-3 rounded text-sm font-light file:mr-4 file:py-1 file:px-3 file:rounded file:border file:border-zinc-700 file:text-xs file:font-medium file:bg-zinc-800 file:text-metal hover:file:bg-zinc-700 file:transition-colors file:cursor-pointer">
-                        <p class="text-xs text-metal-dark mt-2">Large collections? Email photos directly to <a
+                        <p class="text-xs text-metal-dark mt-2">Max 10MB per photo. Large collections? Email photos directly to <a
                                 href="mailto:acquisitions@retrotechna.com"
                                 class="text-gold/70 hover:text-gold transition-colors">acquisitions@retrotechna.com</a>
                         </p>
@@ -511,10 +511,11 @@
             const originalText = submitBtn.textContent;
 
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
             submitBtn.classList.add('opacity-60');
 
             const formData = new FormData(form);
+            const hasPhotos = formData.getAll('photos').some(f => f.size > 0);
+            submitBtn.textContent = hasPhotos ? 'Uploading...' : 'Sending...';
 
             try {
                 const response = await fetch(form.action, {
