@@ -1,0 +1,10 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+pydantic==2.6.4
+python-multipart==0.0.9
+google-genai
+python-dotenv
+requests
+pyyaml
+feedparser
+beautifulsoup4

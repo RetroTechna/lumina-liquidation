@@ -1,0 +1,19 @@
+.DS_Store
+.claude/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Sensitive data
+.env
+leads.csv
+valuations.db
+
+# Node
+node_modules/
+
+# Root dev assets (not part of deployed site)
+/assets/
+/LUMINA_MASTER_SPEC.md

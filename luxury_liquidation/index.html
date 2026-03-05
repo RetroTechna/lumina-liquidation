@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Luxury Electronics Liquidation</title>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config for Dark Mode / Metal Aesthetics -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        metal: {
+                            light: '#E0E0E0',
+                            DEFAULT: '#B0B0B0',
+                            dark: '#707070',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Brushed metal effect for CTA buttons */
+        .btn-metal {
+            background: linear-gradient(135deg, #3A3A3A 0%, #1A1A1A 100%);
+            border: 1px solid #707070;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .btn-metal:hover {
+            background: linear-gradient(135deg, #4A4A4A 0%, #2A2A2A 100%);
+            border-color: #B0B0B0;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 6px 12px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-950 text-zinc-50 antialiased font-sans selection:bg-metal-dark selection:text-white">
+
+    <!-- Top Navigation -->
+    <nav
+        class="absolute top-0 left-0 w-full z-50 py-8 px-6 lg:px-12 flex justify-between items-center bg-gradient-to-b from-black/60 to-transparent">
+        <div class="text-2xl font-bold tracking-[0.3em] text-white uppercase">LUMINA | Retro Technologies</div>
+        <div class="hidden md:flex space-x-10 text-xs tracking-[0.2em] text-metal uppercase font-medium">
+            <a href="#process" class="hover:text-white transition-colors">Methodology</a>
+            <a href="#valuation" class="hover:text-white transition-colors text-white">Start Valuation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- High-end Audio Background -->
+        <div class="absolute inset-0 z-0">
+            <video src="assets/videos/coastal-loop.mp4" autoplay loop muted playsinline
+                class="w-full h-full object-cover object-center"></video>
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-black/75 md:bg-black/60"></div>
+            <!-- Dark Mode Gradient Overlays -->
+            <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/60 to-zinc-950">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-transparent to-zinc-950/90">
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-light mb-8 tracking-tight leading-tight">
+                <span
+                    class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-white via-metal-light to-metal">Premium
+                    Home Electronics</span><br />
+                Valuation & Secure Liquidation
+            </h1>
+            <p class="text-lg md:text-xl text-metal font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                Discreet, high-end liquidation services for Bowers & Wilkins, KEF, McIntosh, high-current amplification,
+                enterprise-grade NAS, and high-resolution mirrorless systems.
+            </p>
+            <a href="#valuation"
+                class="btn-metal text-white px-12 py-5 rounded-sm text-xs tracking-widest uppercase font-semibold inline-block">
+                Request Valuation
+            </a>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-32 bg-zinc-900 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-24">
+                <h2 class="text-xs tracking-[0.3em] text-metal uppercase mb-4 font-medium">Our Methodology</h2>
+                <h3 class="text-3xl md:text-5xl font-light text-white">Seamless & Discreet</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 relative">
+                <!-- Visual Connecting Line (Desktop) -->
+                <div
+                    class="hidden md:block absolute top-[2.5rem] left-1/6 right-1/6 h-px bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-900 z-0">
+                </div>
+
+                <!-- Step 1: Assessment -->
+                <div class="flex flex-col items-center text-center group relative z-10">
+                    <div
+                        class="w-20 h-20 mb-8 rounded-full border border-zinc-700 flex items-center justify-center bg-zinc-950 text-metal-light group-hover:border-metal-dark group-hover:bg-zinc-800 transition-all duration-500 shadow-xl">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text-xs tracking-[0.2em] text-metal uppercase mb-3">01</div>
+                    <h4 class="text-2xl font-medium mb-4 text-white">Expert Market Valuation</h4>
+                    <p class="text-metal font-light text-base leading-relaxed max-w-sm">Submit your equipment details.
+                        Our experts evaluate the market value and provide a competitive preliminary offer within 24
+                        hours.</p>
+                </div>
+
+                <!-- Step 2: Removal -->
+                <div class="flex flex-col items-center text-center group relative z-10">
+                    <div
+                        class="w-20 h-20 mb-8 rounded-full border border-zinc-700 flex items-center justify-center bg-zinc-950 text-metal-light group-hover:border-metal-dark group-hover:bg-zinc-800 transition-all duration-500 shadow-xl">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"
+                                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                        </svg>
+                    </div>
+                    <div class="text-xs tracking-[0.2em] text-metal uppercase mb-3">02</div>
+                    <h4 class="text-2xl font-medium mb-4 text-white">White-Glove Physical Extraction</h4>
+                    <p class="text-metal font-light text-base leading-relaxed max-w-sm">Upon agreement, we coordinate
+                        secure logistics or on-site retrieval. Your sophisticated equipment is handled with the utmost
+                        care.</p>
+                </div>
+
+                <!-- Step 3: Payment -->
+                <div class="flex flex-col items-center text-center group relative z-10">
+                    <div
+                        class="w-20 h-20 mb-8 rounded-full border border-zinc-700 flex items-center justify-center bg-zinc-950 text-metal-light group-hover:border-metal-dark group-hover:bg-zinc-800 transition-all duration-500 shadow-xl">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"
+                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text-xs tracking-[0.2em] text-metal uppercase mb-3">03</div>
+                    <h4 class="text-2xl font-medium mb-4 text-white">Certified Privacy</h4>
+                    <p class="text-metal font-light text-base leading-relaxed max-w-sm">We provide DoD-standard disk
+                        wiping for NAS and home servers, ensuring your data is completely secure and irrecoverable
+                        before payment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Acquisitions Section -->
+    <section class="py-32 bg-zinc-950 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-24">
+                <h2 class="text-xs tracking-[0.3em] text-metal uppercase mb-4 font-medium">Specialized Acquisitions</h2>
+                <h3 class="text-3xl md:text-5xl font-light text-white">Focus Categories</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
+                <!-- Flagship Acoustics (Featured/Prominent) -->
+                <div
+                    class="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl transition-all duration-500 hover:border-metal-dark md:col-span-2 flex flex-col md:flex-row">
+                    <img src="assets/images/bw-803.jpg" alt="Flagship Acoustics"
+                        class="w-full md:w-1/2 h-72 md:h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                    <div class="p-8 md:p-12 relative z-10 flex flex-col justify-center w-full md:w-1/2">
+                        <h4 class="text-3xl md:text-4xl font-medium mb-4 text-white">Flagship Acoustics</h4>
+                        <p class="text-metal font-light text-lg leading-relaxed">We specialize in the white-glove
+                            extraction and acquisition of reference-tier floorstanding speakers from Bowers & Wilkins,
+                            KEF, Focal, and Revel.</p>
+                    </div>
+                </div>
+
+                <!-- Server/NAS -->
+                <div
+                    class="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl transition-all duration-500 hover:border-metal-dark">
+                    <img src="assets/images/server-rack.png" alt="Enterprise Data Destruction"
+                        class="w-full h-72 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                    <div class="p-8 relative z-10">
+                        <h4 class="text-2xl font-medium mb-4 text-white">Certified Privacy &amp; Enterprise Data
+                            Destruction</h4>
+                        <p class="text-metal font-light text-base leading-relaxed">Secure acquisition and DoD-standard
+                            wiping for high-capacity NAS environments and enterprise server racks.</p>
+                    </div>
+                </div>
+
+                <!-- Optics -->
+                <div
+                    class="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl transition-all duration-500 hover:border-metal-dark">
+                    <img src="assets/images/macro-lens.png" alt="Professional Optics"
+                        class="w-full h-72 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                    <div class="p-8 relative z-10">
+                        <h4 class="text-2xl font-medium mb-4 text-white">Professional Optics &amp; Mirrorless Camera
+                            Systems</h4>
+                        <p class="text-metal font-light text-base leading-relaxed">Evaluation and procurement of premium
+                            mirrorless bodies, cinema lenses, and high-resolution optical gear.</p>
+                    </div>
+                </div>
+
+                <!-- Amplification -->
+                <div
+                    class="group relative rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl transition-all duration-500 hover:border-metal-dark">
+                    <img src="assets/images/mcintosh-meter.png" alt="High-Current Amplification"
+                        class="w-full h-72 object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                    <div class="p-8 relative z-10">
+                        <h4 class="text-2xl font-medium mb-4 text-white">Flagship Amplification</h4>
+                        <p class="text-metal font-light text-base leading-relaxed">High-Current &amp; Reference
+                            Amplification. We acquire flagship processors and monoblocks from McIntosh, Proceed, Anthem,
+                            and Audio Research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section -->
+    <section id="valuation" class="py-32 bg-zinc-950 border-t border-zinc-800 relative z-10">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-light mb-6">Request a Valuation</h2>
+                <p class="text-metal font-light text-lg">Provide details about your collection for a discrete,
+                    no-obligation assessment.</p>
+            </div>
+
+            <!-- Form Container -->
+            <div class="bg-zinc-900 border border-zinc-800 p-8 md:p-14 shadow-2xl relative overflow-hidden">
+                <!-- Decorative Corner -->
+                <div
+                    class="absolute top-0 right-0 w-16 h-16 border-t border-r border-metal-dark opacity-30 transform translate-x-4 -translate-y-4">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-16 h-16 border-b border-l border-metal-dark opacity-30 transform -translate-x-4 translate-y-4">
+                </div>
+
+                <form id="leadForm" action="/submit-valuation" method="POST" class="space-y-8 relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label for="name" class="block text-xs uppercase tracking-widest text-metal mb-3">Full
+                                Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full bg-zinc-950/50 border border-zinc-700 text-white px-5 py-4 focus:outline-none focus:border-metal focus:ring-1 focus:ring-metal transition-all font-light placeholder-zinc-600"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="zip_code" class="block text-xs uppercase tracking-widest text-metal mb-3">Zip /
+                                Postal Code</label>
+                            <input type="text" id="zip_code" name="zip_code" required
+                                class="w-full bg-zinc-950/50 border border-zinc-700 text-white px-5 py-4 focus:outline-none focus:border-metal focus:ring-1 focus:ring-metal transition-all font-light placeholder-zinc-600"
+                                placeholder="90210">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="equipment" class="block text-xs uppercase tracking-widest text-metal mb-3">Equipment
+                            Make & Model</label>
+                        <textarea id="equipment" name="equipment" rows="4" required
+                            placeholder="e.g., McIntosh MC462 Amplifier, Bowers & Wilkins 801 D4 Speakers..."
+                            class="w-full bg-zinc-950/50 border border-zinc-700 text-white px-5 py-4 focus:outline-none focus:border-metal focus:ring-1 focus:ring-metal transition-all font-light placeholder-zinc-600 resize-y"></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label for="condition"
+                                class="block text-xs uppercase tracking-widest text-metal mb-3">Overall
+                                Condition</label>
+                            <div class="relative">
+                                <select id="condition" name="condition" required
+                                    class="w-full bg-zinc-950/50 border border-zinc-700 text-white px-5 py-4 focus:outline-none focus:border-metal focus:ring-1 focus:ring-metal transition-all font-light appearance-none">
+                                    <option value="" disabled selected class="text-zinc-600">Select Condition
+                                    </option>
+                                    <option value="Mint / Like New">Mint / Like New</option>
+                                    <option value="Excellent (Minor Wear)">Excellent (Minor Wear)</option>
+                                    <option value="Good (Visible Wear)">Good (Visible Wear)</option>
+                                    <option value="Fair / Needs Repair">Fair / Needs Repair</option>
+                                </select>
+                                <!-- Custom Select Caret -->
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-metal">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="timeline"
+                                class="block text-xs uppercase tracking-widest text-metal mb-3">Preferred Liquidation
+                                Timeline</label>
+                            <div class="relative">
+                                <select id="timeline" name="timeline" required
+                                    class="w-full bg-zinc-950/50 border border-zinc-700 text-white px-5 py-4 focus:outline-none focus:border-metal focus:ring-1 focus:ring-metal transition-all font-light appearance-none">
+                                    <option value="" disabled selected class="text-zinc-600">Select Timeline
+                                    </option>
+                                    <option value="Immediate Cash Buyout (Standard)">Immediate Cash Buyout (Standard)
+                                    </option>
+                                    <option value="Managed Brokerage (Maximized Yield)">Managed Brokerage (Maximized
+                                        Yield)</option>
+                                    <option value="Unsure / Need Consultation">Unsure / Need Consultation</option>
+                                </select>
+                                <!-- Custom Select Caret -->
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-metal">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <button type="submit" id="submitBtn"
+                            class="w-full btn-metal text-white py-5 text-xs tracking-[0.2em] uppercase font-semibold flex justify-center items-center">
+                            <span>Submit Assessment Request</span>
+                        </button>
+                    </div>
+
+                    <div id="formMessage" class="hidden text-center text-sm mt-6 p-5 border rounded-sm tracking-wide">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 py-16 border-t border-zinc-900 text-center">
+        <div class="text-3xl font-bold tracking-[0.3em] text-white uppercase mb-6 opacity-30">Lumina</div>
+        <p class="text-metal-dark text-xs uppercase tracking-[0.1em]">&copy; 2026 Lumina Audio Liquidation. A Retro
+            Technologies Company, Est. 2012. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Form Handling Script -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('submitBtn');
+            const messageDiv = document.getElementById('formMessage');
+
+            // UI State: Loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline lg:pr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> <span>Processing Request...</span>';
+
+            const formData = new FormData(form);
+
+            try {
+                // Send data to FastAPI backend
+                const response = await fetch('/submit-valuation', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    // Success State
+                    messageDiv.className = 'text-center text-sm mt-6 p-5 border border-green-800 bg-green-950/40 text-green-400 rounded-sm font-light tracking-wide';
+                    messageDiv.textContent = result.message;
+                    messageDiv.classList.remove('hidden');
+                    form.reset();
+                } else {
+                    throw new Error('Server Return Error');
+                }
+            } catch (error) {
+                // Error State
+                messageDiv.className = 'text-center text-sm mt-6 p-5 border border-red-800 bg-red-950/40 text-red-400 rounded-sm font-light tracking-wide';
+                messageDiv.textContent = 'A connection error occurred. Please try again or contact us directly.';
+                messageDiv.classList.remove('hidden');
+            } finally {
+                // Restore Button State
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>Submit Assessment Request</span>';
+            }
+        });
+    </script>
+</body>
+
+</html>
